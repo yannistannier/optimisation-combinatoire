@@ -1,6 +1,6 @@
-### Exercice 1: Graphe dirigé
+## Exercice 1: Graphe dirigé
 
-1. Complétez le fichier graph.h et implémentez-le dans un fichier graph.cc! 
+#### 1. Complétez le fichier graph.h et implémentez-le dans un fichier graph.cc! 
 
 **Attention:** chaque méthode devra avoir une complexité O(1).
 
@@ -56,22 +56,22 @@ tar xf test.tar.gz
 make 1
 ```
 
-2. Ajoutez une fonction qui renvoie le nombre d'arcs: int NumArcs() const 
+#### 2. Ajoutez une fonction qui renvoie le nombre d'arcs: int NumArcs() const 
 
 Comment faire pour qu'elle tourne en O(1)? Vous pourrez adapter la classe, mais attention, la complexité de toutes les opérations doit rester O(1). 
 
 **Test:** make 2 
 
 
-3. Ajoutez une fonction void MakeSimple() qui éliminera toutes les boucles et multi-arcs du graphe, en le rendant donc simple. 
+#### 3. Ajoutez une fonction void MakeSimple() qui éliminera toutes les boucles et multi-arcs du graphe, en le rendant donc simple. 
 Elle devra fonctionner en O(N log N), voire en O(N) si vous y arrivez. 
 
 **Test:** make 3 
 
 
-### Exercice 2: Graphe non dirigé, composantes connexes
+## Exercice 2: Graphe non dirigé, composantes connexes
 
-1. Complétez le fichier ugraph.h et implémentez-le dans un fichier ugraph.cc! 
+#### 1. Complétez le fichier ugraph.h et implémentez-le dans un fichier ugraph.cc! 
 
 Attention: chaque méthode devra avoir une complexité O(1).
 
@@ -100,20 +100,20 @@ class UndirectedGraph {
 
 ```
 
-Test:
-make u1
+**Test:** make u1
 
 
-2. Ajoutez une fonction vector<int> GetNodesConnectedTo(int node) qui renvoie les noeuds qui sont dans la même composante connexe que node 
+#### 2. Ajoutez une fonction vector<int> GetNodesConnectedTo(int node) qui renvoie les noeuds qui sont dans la même composante connexe que node 
 
 Test: make u2 
 
 
-3. Ajoutez une fonction vector<vector<int>> ConnectedComponents() qui renvoie toutes les composantes connexes du graphes, dans un ordre quelquonque. 
+#### 3. Ajoutez une fonction vector<vector<int>> ConnectedComponents() qui renvoie toutes les composantes connexes du graphes, dans un ordre quelquonque. 
 
-Test: make u3 
+**Test:** make u3 
 
-4. [*] Implémentez la fonction décrite dans triangles.h:
+####4. [*] Implémentez la fonction décrite dans triangles.h:
+
 ```
 #include "ugraph.h"
 
@@ -125,5 +125,5 @@ int NumTriangles(const UndirectedGraph& graph);
 Essayez d'obtenir une complexite meilleure que O(N3). 
 Indice: vous pouvez par exemple ajouter une fonction void SortAdjacencyList() dans les classes DirectedGraph et UndirectedGraph pour trier les listes d'adjacence sans véritablement "changer" le graphe. Cela peut vous aider à trouver un algorithme plus efficace. 
 
-Test: make u4 
+**Test:** make u4 
 
