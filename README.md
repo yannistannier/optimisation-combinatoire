@@ -7,7 +7,7 @@
 2. Graphes: Parcours (BFS, DFS). Composantes fortement connexes. Dijkstra.
 3. Arbres et autres graphes particuliers. Programmation dynamique.
 4. Programmation dynamique: autres exemples.
-5. Arbre couvrant minimum. Autres algorithmes gloutons.
+5. Sac à dos. Arbre couvrant minimum. Coloration graphe. (Algorithmes gloutons).
 6. Heuristiques, Monte-Carlo (exemples possibles: diamètre d'un graphe. Miller-Rabin).
 7. Programmation linéaire (aka LP)
 8. Programmation linéaire entière (aka MIP)
