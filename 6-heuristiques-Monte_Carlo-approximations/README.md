@@ -44,6 +44,8 @@ tar xf test.tar.gz
 make diam1
 
 
+![alt text](https://raw.githubusercontent.com/yannistannier/optimisation-combinatoire/master/6-heuristiques-Monte_Carlo-approximations/diametre.png)
+
 
 ***Implémentez*** dans un fichier diam2.cc la fonction DiametreUB() décrite dans le fichier diam2.h:
 
@@ -125,7 +127,7 @@ DirectedGraph MaxDAG(const DirectedGraph& graph);
 
 Test: make fas 
 
-
+![alt text](https://raw.githubusercontent.com/yannistannier/optimisation-combinatoire/master/6-heuristiques-Monte_Carlo-approximations/dag.svg)
 
 
 # Exercice 3: TSP (Traveling Salesman Problem)
