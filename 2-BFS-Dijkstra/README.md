@@ -1,7 +1,7 @@
 # Exercice 1: BFS
 
-### 1. Reprenez les fichiers graph.h, graph.cc, ugraph.h et ugraph.cc faits lors du dernier TD (corrigés) 
-Implémentez dans un fichier bfs.1.cc la fonction BFS() décrite dans le fichier bfs.1.h:
+### 1. Reprenez les fichiers ```graph.h, graph.cc, ugraph.h``` et ```ugraph.cc``` faits lors du dernier Exo
+Implémentez dans un fichier ```bfs.1.cc``` la fonction BFS() décrite dans le fichier bfs.1.h:
 
 ```
 #include "ugraph.h"
@@ -24,7 +24,7 @@ make bfs.1
 ```
 
 
-### 2. Implémentez la fonction GetBfsDistances() décrite dans le fichier bfs.2.h:
+### 2. Implémentez la fonction ```GetBfsDistances()``` décrite dans le fichier bfs.2.h:
 
 ```
 #include <vector>
@@ -53,7 +53,7 @@ vector<int> GetBfsDistances(const vector<int>& parents);
 Test: make bfs.2 
 
 
-### 3. Implémentez la fonction GetShortestPathFromRootedTree() décrite dans le fichier bfs.3.h:
+### 3. Implémentez la fonction ```GetShortestPathFromRootedTree()``` décrite dans le fichier bfs.3.h:
 
 ```
 #include <vector>
@@ -78,13 +78,13 @@ Test: make bfs.3
 
 # Exercice 2: Dijkstra
 
-### 1. Copiez graph.h et graph.cc dans vgraph.h et vgraph.cc, et modifiez la fonction AddArc() pour qu'elle prenne un argument supplémentaire: double length. 
-Modifiez également la fonction Neighbors() pour qu'elle renvoie un const vector<pair<int, double>>&. 
+### 1. Copiez ```graph.h``` et ```graph.cc``` dans ```vgraph.h``` et ```vgraph.cc```, et modifiez la fonction ```AddArc()``` pour qu'elle prenne un argument supplémentaire: double length. 
+Modifiez également la fonction ```Neighbors()``` pour qu'elle renvoie un const vector<pair<int, double>>&. 
 
 Test: make vgraph 
 
 
-### 2. (**) Implémentez la fonction Dijkstra() décrite dans le fichier dijkstra.h:
+### 2. (**) Implémentez la fonction Dijkstra() décrite dans le fichier dijkstra.h
 
 ```
 #include "vgraph.h"
@@ -94,7 +94,7 @@ Test: make vgraph
 vector<int> Dijkstra(const DirectedGraph& graph, int src);
 ```
 
-On utilisera priority_queue<> sur une struct qu'on définira, qui correspond à un noeud du graph associé à sa distance depuis la source, assorti d'un opérateur < adapté à ce qu'on en veut pour la priority_queue. 
+On utilisera ```priority_queue<>```sur une struct qu'on définira, qui correspond à un noeud du graph associé à sa distance depuis la source, assorti d'un opérateur < adapté à ce qu'on en veut pour la ```priority_queue```. 
 La complexité devra être O(N + M log(M)). 
 
 Test: make dijkstra 
