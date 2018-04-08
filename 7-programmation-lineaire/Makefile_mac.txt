@@ -1,0 +1,18 @@
+SHELL=bash
+GCC=g++ -std=c++11 -Wall -Wextra -Werror -Wno-sign-compare -O2 -Wno-deprecated -I../include -DUSE_GLOP -Wno-unused-parameter
+ORTOOLS=../lib/libortools.dylib
+ORLNK=-Wl,-rpath ../lib -L../lib -lortools -lz
+
+.PHONY: menu
+
+clean:
+	rm -f *.o *.h.gch *.test a.out
+
+%.o: %.cc %.h
+	$(GCC) -c $< -o $@
+
+menu.test: menu.o $(ORTOOLS) main_utils.h menu.test.cc
+	$(GCC) $(ORLNK) menu.o menu.test.cc -o $@
+
+menu: menu.test
+	./menu.test
