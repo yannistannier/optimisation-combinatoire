@@ -127,7 +127,6 @@ DirectedGraph MaxDAG(const DirectedGraph& graph);
 
 Test: make fas 
 
-![alt text](https://raw.githubusercontent.com/yannistannier/optimisation-combinatoire/master/6-heuristiques-Monte_Carlo-approximations/dag.svg)
 
 
 # Exercice 3: TSP (Traveling Salesman Problem)
